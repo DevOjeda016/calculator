@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="323.0" prefWidth="582.0" style="-fx-background-color: #E2FAFF;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.utl.dsm.calculator.PrincipalController">
+    <children>
+      <GridPane alignment="CENTER" layoutY="1.0" prefHeight="323.0" prefWidth="582.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="115.0" minHeight="47.0" prefHeight="85.0" valignment="CENTER" />
+          <RowConstraints maxHeight="182.0" minHeight="10.0" prefHeight="152.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="125.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <FlowPane alignment="CENTER" columnHalignment="CENTER" hgap="40.0" prefHeight="135.0" prefWidth="582.0" rowValignment="TOP" vgap="40.0" GridPane.rowIndex="1">
+               <children>
+                  <GridPane prefHeight="70.0" prefWidth="302.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="77.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="223.0" minWidth="10.0" prefWidth="223.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                  
+                                                                                                        <Label text="Number 1" />
+                          <Label text="Number 2" GridPane.rowIndex="1" />
+                  
+                                                                                            <TextField fx:id="txtNum1" snapToPixel="false" GridPane.columnIndex="1" />
+                          <TextField fx:id="txtNum2" prefHeight="26.0" prefWidth="118.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" vgap="10.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                  
+                          <Button fx:id="btnSumar" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#sumar" style="-fx-background-color: #3D584F;" text="+" textFill="#ffffffe5" />
+                          <Button fx:id="btnMultiplicar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#multiplicar" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3D584F;" text="x" textFill="WHITE" GridPane.columnIndex="1" />
+                          <Button fx:id="btnRestar" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#restar" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3D584F;" text="-" textFill="#f8f7f7" GridPane.rowIndex="1" />
+                          <Button fx:id="btnDividir" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#dividir" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #3D584F;" text="/" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     </children>
+                  </GridPane>
+               </children>
+            </FlowPane>
+      
+                          <TextField fx:id="txtResultado" alignment="CENTER" editable="false" maxWidth="542.0" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <HBox alignment="CENTER" prefHeight="86.0" prefWidth="582.0">
+               <children>
+                    <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="41.0" prefWidth="266.0" text="Arithmetic Calculator" textFill="#3d584f">
+                        <font>
+                            <Font name="System Bold" size="24.0" />
+                        </font>
+                    </Label>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
