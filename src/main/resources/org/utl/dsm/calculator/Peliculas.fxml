@@ -19,7 +19,7 @@
                   <TextField fx:id="txtAnio" promptText="Ingresa el año" />
                   <TextField fx:id="txtDirector" promptText="Ingresa el director" />
                   <TextField fx:id="txtGenero" promptText="Ingresa el género" />
-                  <Button fx:id="btnRegistrar" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#agregar" style="-fx-background-color: #1166F0;" text="Button" textFill="WHITE" />
+                  <Button fx:id="btnRegistrar" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#agregar" style="-fx-background-color: #1166F0;" text="Registrar" textFill="WHITE" />
                </children>
             </VBox>
          </children>
@@ -28,7 +28,10 @@
       <AnchorPane layoutX="316.0" layoutY="60.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F3FFFF;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
             <TextArea fx:id="txtLista" layoutX="85.0" layoutY="90.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0" />
-            <Label alignment="CENTER" layoutX="169.0" layoutY="26.0" text="Lista de Peliculas" textFill="#1166f0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <Label alignment="CENTER" layoutX="169.0" layoutY="26.0" text="Lista de Peliculas" textFill="#1166f0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
          </children>
       </AnchorPane>
    </children>
